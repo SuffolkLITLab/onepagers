@@ -1,4 +1,4 @@
-$(function () {
+$(document).ready(function () {
   let docHeader = $('#document-header');
   let pageFooter = $('.page-footer');
   let title = $(docHeader).data('title');
