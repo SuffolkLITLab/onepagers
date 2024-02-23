@@ -5,7 +5,7 @@ $(document).ready(function () {
   let subtitle = $(docHeader).data('subtitle');
   let pdf = $(docHeader).data('pdf');
 
-  $(docHeader).load('../../template-parts/page-header.html', function () {
+  $(docHeader).load('/template-parts/page-header.html', function () {
     $(docHeader).find('h1').text(title);
     if (subtitle) $(docHeader).find('.subtitle').text(subtitle);
     if ($('body').hasClass('one-pager')) {
