@@ -2,7 +2,7 @@
 
 A collection of one-page summaries of the Suffolk University Law School's Legal Information & Technology Lab (LIT Lab)'s projects and initiatives.
 
-Find it at [suffolklitlab-onepagers.githubpages.com](https://suffolklitlab-onepagers.githubpages.com).
+Find it at [suffolklitlab.org/onepagers/](https://suffolklitlab.org/onepagers/).
 
 
 ## Notes for Future Users
@@ -25,7 +25,7 @@ Do not add additional page footers; they will added to section.page automaticall
 
 HTML for the document header (`<header id="document-header">`, not `<head>`), nav buttons, and page footers (`<footer class="page-footer">`) is in the template-parts folder and loaded by assets/js/load-template-parts.js.
 
-Set the document title (the `<h1>` tag, not the `<title>` tag) and subtitle (.subtitle) using the `data-title` and `data-subtitle` (optional) properties of the #page-header tag. For one-pagers, identify the PDF file location using the `data-pdf` (optional) property.
+Set the document title (the `<h1>` tag, not the `<title>` tag) and subtitle (.subtitle) using the `data-title` and `data-subtitle` (optional) properties of the #document-header tag. For one-pagers, identify the PDF file location using the `data-pdf` (optional) property.
 
 ### Utility Classes
 
@@ -33,7 +33,7 @@ General utility classes are kept in /assets/scss/_utility.scss. I've made no att
 
 Font size classes (.font-xs through .font-huge) are in /assets/scss/_typography.scss.
 
-Flex and grid layouts are in /assets/scss/_flex-grid.scss. Use .row for horizontal columns/groups, .col for vertical groups, and .grid for grids. Note the utility classes for spacing and positioning, and for grid columns.
+Flex and grid layouts are in /assets/scss/_flex-grid.scss. Use .row for horizontal groups, .flex-col for vertical groups, and .grid for grids. Note the utility classes for spacing and positioning, and for grid columns.
 
 All the available Bootstrap icons are shown [here](https://icons.getbootstrap.com/).
 
