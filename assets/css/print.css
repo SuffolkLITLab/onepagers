@@ -1,0 +1,37 @@
+@page {
+  margin: 0;
+  size: 8.5in 11in;
+  :header,
+  :footer {
+    display: none;
+  }
+}
+html {
+  font-size: 80%;
+}
+
+body {
+  background-color: unset;
+}
+
+#document-header .litlab-logo {
+  height: 68px;
+}
+
+.page {
+  max-height: 1vh;
+  overflow: hidden;
+}
+.page:after {
+  display: none !important;
+}
+
+.browser-only {
+  display: none;
+}
+
+.print-only {
+  display: inherit !important;
+}
+
+/*# sourceMappingURL=print.css.map */

@@ -1,0 +1,101 @@
+body {
+  background-color: GhostWhite;
+  box-sizing: border-box;
+  display: none; // Hidden until the page header and footer are loaded from /assets/js/load-template-parts.js
+  height: 100%;
+  margin: 0;
+  width: 100%;
+}
+
+#document-container {
+  box-sizing: border-box;
+  margin: 0 auto;
+  max-width: $breakpoint-xl;
+  padding-right: $spacing-xl;
+  padding-left: $spacing-xl;
+  width: 100%;
+
+  @media (max-width: $breakpoint-sm) {
+    padding-right: $spacing-sm;
+    padding-left: $spacing-sm;
+  }
+}
+
+#document-header {
+  align-items: center;
+  break-after: avoid-page;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.pages {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.page {
+  box-sizing: border-box;
+  break-before: page;
+  break-inside: avoid-page;
+  break-after: page;
+  display: flex;
+  flex-direction: column;
+  min-height: 100svh;
+  padding-top: $spacing-xl;
+  padding-bottom: $spacing-lg;
+  row-gap: $spacing-lg;
+  width: 100%;
+
+  @media (max-width: $breakpoint-sm) {
+    padding-top: $spacing-normal;
+    padding-bottom: $spacing-normal;
+  }
+
+  &:first-child {
+    break-before: avoid-page;
+  }
+
+  * {
+    break-before: avoid-page;
+    break-inside: avoid-page;
+    break-after: avoid-page;
+  }
+
+  &:not(:last-child):after {
+    border-top: $border;
+    content: '';
+    display: block;
+    height: 0;
+  }
+}
+
+.page-content {
+  > * {
+    margin-top: $spacing-lg;
+    margin-bottom: $spacing-lg;
+  }
+
+  > :first-child,
+  > :first-child > :first-child {
+    margin-top: 0;
+  }
+
+  > :last-child,
+  > :last-child > :last-child {
+    margin-bottom: 0;
+  }
+}
+
+.page-footer {
+  align-items: end;
+  display: flex;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  width: 100%;
+
+  > .row {
+    flex-grow: 1;
+  }
+}

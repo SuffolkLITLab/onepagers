@@ -1,0 +1,69 @@
+// Icons from Bootstrap Icons
+// https://icons.getbootstrap.com/
+.bi {
+  background-color: unset;
+  border: unset;
+  color: $suffolk-gold;
+  display: grid;
+  font-size: 1lh;
+  line-height: 1;
+  margin: unset;
+  padding: unset;
+  // Force icons to print:
+  -webkit-print-color-adjust: exact !important; // Chrome, Safari 6–15.3, Edge
+  color-adjust: exact !important;               // Firefox 48–96
+  print-color-adjust: exact !important;
+
+  &:hover:not(:active) {
+    box-shadow: unset;
+  }
+
+  &.lh-2 {
+    font-size: 2lh;
+  }
+
+  &.flip-x {
+    transform: scaleX(-1);
+  }
+
+  &.flip-y {
+    transform: scaleY(-1);
+  }
+}
+
+#document-header {
+  .back,
+  .download-page,
+  .print-page {
+    align-self: center;
+    background-color: $suffolk-gold-dim;
+    border: none;
+    border-radius: 9999px;
+    padding: 1em;
+    text-decoration: none;
+    transition: box-shadow .2s;
+
+    &:hover {
+      background-color: $suffolk-gold;
+
+      &:not(:active) {
+        box-shadow: $box-shadow;
+      }
+    }
+
+    .bi {
+      color: White;
+      // font-size: 1.5em;
+    }
+  }
+}
+
+.index {
+  #page-content {
+    .cards {
+      .bi:has(+ h2) {
+        font-size: 2lh;
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+.cards {
+  display: grid;
+  gap: $spacing-normal;
+  grid-template-columns: repeat(2, 1fr);
+  list-style: none;
+  margin: $spacing-lg 0;
+  padding: 0;
+
+  @media (max-width: $breakpoint-sm) {
+    grid-template-columns: none;
+  }
+}
+
+.cards > *,
+.card {
+  background-color: Snow;
+  border: $border;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
+  padding: $spacing-md;
+  
+  button,
+  .button {
+    align-self: start;
+  }
+
+  > :first-child,
+  > :first-child :first-child {
+    margin-top: 0;
+  }
+
+  > :last-child,
+  > :last-child :last-child {
+    margin-bottom: 0;
+  }
+}

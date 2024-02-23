@@ -1,0 +1,22 @@
+.page-footer {
+  color: DarkSlateGray;
+
+  .litlab-logo {
+    img {
+      height: 35px;
+      width: auto;
+    }
+  }
+
+  .litlab-name {
+    font-size: $font-size-sm;
+    margin: 0;
+  }
+  
+  .footer-links {
+    font-size: $font-size-sm;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }  
+}

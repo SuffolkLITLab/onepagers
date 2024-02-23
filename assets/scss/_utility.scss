@@ -1,0 +1,36 @@
+.block {
+  display: block;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.print-only {
+  display: none !important;
+}
+
+.add-top-margin {
+  margin-top: $spacing-normal;
+}
+
+.add-bottom-margin {
+  margin-bottom: $spacing-normal;
+}
+
+.remove-top-margin {
+  margin-top: 0 !important;
+}
+
+.remove-bottom-margin {
+  margin-bottom: 0 !important;
+}
+
+.screen-reader-text {
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+    left: -9999px;
+    top: auto;
+  width: 1px;
+}

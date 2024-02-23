@@ -1,0 +1,23 @@
+button,
+.button {
+  border: $button-border;
+  border-radius: $button-border-radius;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: bold;
+  padding: .5em 1em;
+  text-decoration: none;
+  transition: box-shadow .2s;
+
+  &:not(:hover) {
+    color: $suffolk-blue;
+  }
+
+  &:hover {
+    color: $suffolk-purple;
+  }
+
+  &:hover:not(:active) {
+    box-shadow: $box-shadow;
+  }
+}

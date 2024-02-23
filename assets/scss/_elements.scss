@@ -1,0 +1,19 @@
+hr {
+  border: none;
+  border-top: $border;
+  height: 0;
+}
+
+.litlab-logo {
+  display: inline-block;
+
+  img {
+    display: block;
+    height: 100px;
+    width: auto;
+  }
+}
+
+.litlab-email-address {
+  align-self: center;
+}

@@ -1,0 +1,31 @@
+.one-pager {
+  .grid:has(* > .card) {
+    > *:not(:has(.card)) {
+      margin-top: 0;
+      margin-bottom: 0;
+  
+      @media (min-width: $breakpoint-xl) {
+        margin-top: calc(1px + $spacing-md);
+        margin-bottom: calc(1px + $spacing-md);
+
+        &:first-child {
+          padding-left: calc(1px + $spacing-md);
+        }
+        
+        &:last-child {
+          padding-right: calc(1px + $spacing-md);
+        }
+      }
+
+      > :first-child,
+      > :first-child :first-child {
+        margin-top: 0;
+      }
+
+      > :last-child,
+      > :last-child :last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
