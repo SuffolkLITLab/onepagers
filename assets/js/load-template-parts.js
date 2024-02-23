@@ -5,11 +5,11 @@ $(document).ready(function () {
   let subtitle = $(docHeader).data('subtitle');
   let pdf = $(docHeader).data('pdf');
 
-  $(docHeader).load('template-parts/page-header.html', function () {
+  $(docHeader).load('https://suffolklitlab.org/onepagers/template-parts/page-header.html', function () {
     $(docHeader).find('h1').text(title);
     if (subtitle) $(docHeader).find('.subtitle').text(subtitle);
     if ($('body').hasClass('one-pager')) {
-      $.get('template-parts/nav-buttons.html', function (navButtons) {
+      $.get('https://suffolklitlab.org/onepagers/template-parts/nav-buttons.html', function (navButtons) {
         $(docHeader).append(navButtons);
         $(docHeader).promise().done(function () {
           if (pdf) {
@@ -21,7 +21,7 @@ $(document).ready(function () {
       });
     }
   });
-  $.get('template-parts/page-footer.html', function (pageFooterContent) {
+  $.get('https://suffolklitlab.org/onepagers/template-parts/page-footer.html', function (pageFooterContent) {
     $(pageFooter).html(pageFooterContent);
     $('#document-container .page:not(:first-of-type)').append('<footer class="page-footer">' + pageFooterContent + '</footer>');
   });
