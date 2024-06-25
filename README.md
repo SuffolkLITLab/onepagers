@@ -2,7 +2,7 @@
 
 A collection of one-page summaries of the Suffolk University Law School's Legal Information & Technology Lab (LIT Lab)'s projects and initiatives.
 
-Find it at [suffolklitlab.org/onepagers/](https://suffolklitlab.org/onepagers/).
+Find it at [onepagers.suffolklitlab.org/](https://onepagers.suffolklitlab.org/).
 
 
 ## Notes for Future Users
