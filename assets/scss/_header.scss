@@ -1,7 +1,27 @@
 #document-header {
+  position: relative;
+
+  &::after {
+    background-color: $suffolk-blue-wash;
+    content: '';
+    display: block;
+    height: 100vh;
+    position: absolute;
+      bottom: calc(-1 * $spacing-lg);
+      left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    z-index: -1;
+  }
+
+  + .page-content {
+    margin-top: $spacing-lg;
+  }
+
   .litlab-logo {
+    border-right: 10px solid #fdb924;
     height: 85px;
-    width: auto;
+    padding-right: $spacing-normal;
   }
   
   h1 {
