@@ -20,6 +20,14 @@ body {
   .litlab-logo {
     height: 68px;
   }
+
+  &::after {
+    display: none;
+  }
+
+  + .page-content {
+    margin-top: 0;
+  }
 }
 
 .page {

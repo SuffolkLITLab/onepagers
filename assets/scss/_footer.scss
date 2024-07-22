@@ -2,9 +2,11 @@
   color: DarkSlateGray;
 
   .litlab-logo {
+    display: block;
+    height: 35px;
+
     img {
-      height: 35px;
-      width: auto;
+      display: block;
     }
   }
 
@@ -17,6 +19,6 @@
     font-size: $font-size-sm;
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding: 0 $spacing-normal 0 0;
   }  
 }
