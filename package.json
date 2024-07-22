@@ -4,7 +4,7 @@
   "description": "A minimal sass compiler configuration.",
   "main": "index.js",
   "devDependencies": {
-    "http-server": "^14.1.1"
+    "http-server": "^14.1.1",
     "sass": "^1.70.0"
   },
   "scripts": {
