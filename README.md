@@ -43,21 +43,27 @@ All the available Bootstrap icons are shown [here](https://icons.getbootstrap.co
 All notable changes to this project will be documented in this file. The format
 is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
+### 1.3 2024-07-22
+
+#### Changed
+* Switched from absolute URLs to relative URLs
+
+
 ### 1.2 - 2024-03-07
 
 #### Changed
-- Minor wording changes to the Document Assembly Line one-pager.
+* Minor wording changes to the Document Assembly Line one-pager.
 
 
 ### 1.1 - 2024-02-26
 
 #### Changed
-- Made some minor style and substance changes based on feedback from @plocket.
+* Made some minor style and substance changes based on feedback from @plocket.
 
 
 ### 1.0 - 2024-02-23
 
 #### Added
-- Index of one-pagers at index.html.
-- One-pager for the Document Assembly Line.
-- One-pager for LIT Lab partnerships.
+* Index of one-pagers at index.html.
+* One-pager for the Document Assembly Line.
+* One-pager for LIT Lab partnerships.
