@@ -23,11 +23,8 @@ $(document).ready(function () {
   });
   $.get('/template-parts/page-footer.html', function (pageFooterContent) {
     $(pageFooter).html(pageFooterContent);
-    $('#document-container .page:not(:first-of-type)').append('<footer class="page-footer">' + pageFooterContent + '</footer>');
   });
   
-  
-
   $(docHeader).promise().done(function () {
     $(pageFooter).promise().done(function () {
       $('body').show();

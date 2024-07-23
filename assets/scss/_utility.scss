@@ -6,6 +6,12 @@
   text-align: center;
 }
 
+.screen-only {
+  @media print {
+    display: none !important;
+  }
+}
+
 .print-only {
   display: none !important;
 }
@@ -14,8 +20,24 @@
   margin-top: $spacing-normal;
 }
 
+.add-top-margin-md {
+  margin-top: $spacing-md;
+}
+
+.add-top-margin-lg {
+  margin-top: $spacing-lg;
+}
+
 .add-bottom-margin {
   margin-bottom: $spacing-normal;
+}
+
+.add-bottom-margin-md {
+  margin-bottom: $spacing-md;
+}
+
+.add-bottom-margin-lg {
+  margin-bottom: $spacing-lg;
 }
 
 .remove-top-margin {
