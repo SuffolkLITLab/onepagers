@@ -23,6 +23,13 @@
     box-shadow: unset;
   }
 
+  &.invert {
+    background-color: $suffolk-gold;
+    border-radius: 9999px;
+    color: White;
+    padding: $spacing-xs;
+  }
+
   &.lh-2 {
     font-size: 2lh;
   }
@@ -33,6 +40,10 @@
 
   &.flip-y {
     transform: scaleY(-1);
+  }
+
+  &.rotate-90 {
+    transform: rotate(90deg);
   }
 }
 

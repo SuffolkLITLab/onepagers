@@ -34,3 +34,19 @@
     top: auto;
   width: 1px;
 }
+
+ol,
+ul {
+  &.nobullets {
+    list-style: none;
+    padding-left: 0;
+
+    li {
+      margin-bottom: $spacing-sm;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

@@ -3,55 +3,56 @@
   display: grid;
   gap: $spacing-normal;
   grid-template-columns: repeat(2, 1fr);
-}
 
-.cols-1 {
-  grid-template-columns: auto;
-}
-
-.cols-2-1 {
-  grid-template-columns: 2fr 1fr;
-}
-
-.cols-1-2 {
-  grid-template-columns: 1fr 2fr;
-}
-
-.cols-3 {
-  grid-template-columns: repeat(3, 1fr);
-}
-
-.cols-4 {
-  grid-template-columns: repeat(4, 1fr);
-}
-
-@media (max-width: $breakpoint-lg) {
-  .cols-4 {
-    grid-template-columns: repeat(3, 1fr);
-  } 
-}
-
-@media (max-width: $breakpoint-md) {
-  .cols-2-1,
-  .cols-1-2,
-  .cols-3 {
-    grid-template-columns: repeat(2, 1fr);
+  &.cols-1 {
+    grid-template-columns: auto;
   }
-
-  .cols-4 {
+  
+  &.cols-2-1 {
+    grid-template-columns: 2fr 1fr;
+  }
+  
+  &.cols-1-2 {
+    grid-template-columns: 1fr 2fr;
+  }
+  
+  &.cols-3 {
     grid-template-columns: repeat(3, 1fr);
   }
+  
+  &.cols-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  @media (max-width: $breakpoint-lg) {
+    &.cols-4 {
+      grid-template-columns: repeat(3, 1fr);
+    } 
+  }
+  
+  @media (max-width: $breakpoint-md) {
+    &.cols-2-1,
+    &.cols-1-2,
+    &.cols-3 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    &.cols-4 {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media (max-width: $breakpoint-sm) {
+    &.cols-2-1,
+    &.cols-1-2,
+    &.cols-3,
+    &.cols-4 {
+      gap: 0;
+      grid-template-columns: none;
+    } 
+  }
 }
 
-@media (max-width: $breakpoint-sm) {
-  .cols-2-1,
-  .cols-1-2,
-  .cols-3,
-  .cols-4 {
-    gap: 0;
-    grid-template-columns: none;
-  } 
-}
 
 // Flex
 .row {
@@ -84,6 +85,10 @@
 
 .gap-lg {
   gap: $spacing-lg;
+}
+
+.gap-2-5 {
+  gap: calc((2 * $spacing-md) + $spacing-normal)
 }
 
 // Positioning
