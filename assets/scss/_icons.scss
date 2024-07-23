@@ -11,9 +11,9 @@
   color: $suffolk-gold;
   display: grid;
   font-size: 1lh;
-  line-height: 1;
   margin: unset;
   padding: unset;
+  place-content: center;
   // Force icons to print:
   -webkit-print-color-adjust: exact !important; // Chrome, Safari 6–15.3, Edge
   color-adjust: exact !important;               // Firefox 48–96
@@ -27,7 +27,12 @@
     background-color: $suffolk-gold;
     border-radius: 9999px;
     color: White;
-    padding: $spacing-xs;
+    height: 1lh;
+    width: 1lh;
+
+    &::before {
+      font-size: .5lh;
+    }
   }
 
   &.lh-2 {

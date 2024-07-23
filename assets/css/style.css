@@ -105,9 +105,9 @@ body {
   color: #fdb924;
   display: grid;
   font-size: 1lh;
-  line-height: 1;
   margin: unset;
   padding: unset;
+  place-content: center;
   -webkit-print-color-adjust: exact !important;
   color-adjust: exact !important;
   print-color-adjust: exact !important;
@@ -119,7 +119,11 @@ body {
   background-color: #fdb924;
   border-radius: 9999px;
   color: White;
-  padding: 0.5625rem;
+  height: 1lh;
+  width: 1lh;
+}
+.bi.invert::before {
+  font-size: 0.5lh;
 }
 .bi.lh-2 {
   font-size: 2lh;
@@ -306,8 +310,17 @@ button:hover:not(:active),
 
 .grid {
   display: grid;
-  gap: 1rem;
+  column-gap: 1rem;
   grid-template-columns: repeat(2, 1fr);
+  row-gap: 1.5rem;
+}
+.grid .col > :first-child,
+.grid .col > :first-child :first-child {
+  margin-top: 0;
+}
+.grid .col > :last-child,
+.grid .col > :last-child :last-child {
+  margin-bottom: 0;
 }
 .grid.cols-1 {
   grid-template-columns: auto;
@@ -347,15 +360,6 @@ button:hover:not(:active),
 .row {
   display: flex;
   gap: 1rem;
-}
-
-.col > :first-child,
-.col > :first-child :first-child {
-  margin-top: 0;
-}
-.col > :last-child,
-.col > :last-child :last-child {
-  margin-bottom: 0;
 }
 
 .flex-col {
@@ -594,6 +598,12 @@ button:hover:not(:active),
   text-align: center;
 }
 
+@media print {
+  .screen-only {
+    display: none !important;
+  }
+}
+
 .print-only {
   display: none !important;
 }
@@ -602,8 +612,24 @@ button:hover:not(:active),
   margin-top: 1rem;
 }
 
+.add-top-margin-md {
+  margin-top: 1.5rem;
+}
+
+.add-top-margin-lg {
+  margin-top: 2.25rem;
+}
+
 .add-bottom-margin {
   margin-bottom: 1rem;
+}
+
+.add-bottom-margin-md {
+  margin-bottom: 1.5rem;
+}
+
+.add-bottom-margin-lg {
+  margin-bottom: 2.25rem;
 }
 
 .remove-top-margin {

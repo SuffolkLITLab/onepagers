@@ -1,8 +1,21 @@
 // Grid
 .grid {
   display: grid;
-  gap: $spacing-normal;
+  column-gap: $spacing-normal;
   grid-template-columns: repeat(2, 1fr);
+  row-gap: $spacing-md;
+
+  .col {
+    > :first-child,
+    > :first-child :first-child {
+      margin-top: 0;
+    }
+  
+    > :last-child,
+    > :last-child :last-child {
+      margin-bottom: 0;
+    }
+  }
 
   &.cols-1 {
     grid-template-columns: auto;
@@ -58,18 +71,6 @@
 .row {
   display: flex;
   gap: $spacing-normal;
-}
-
-.col {
-  > :first-child,
-  > :first-child :first-child {
-    margin-top: 0;
-  }
-
-  > :last-child,
-  > :last-child :last-child {
-    margin-bottom: 0;
-  }
 }
 
 .flex-col {
