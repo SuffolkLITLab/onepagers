@@ -43,10 +43,16 @@ All the available Bootstrap icons are shown [here](https://icons.getbootstrap.co
 All notable changes to this project will be documented in this file. The format
 is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
+### 1.3.1 2024-08-13
+* Updated the Document Assembly Line overview to clarify CourtFormsOnline v. interview hosting.
+
+
 ### 1.3 2024-07-22
 
 #### Changed
-* Switched from absolute URLs to relative URLs
+* Switched from absolute URLs to relative URLs.
+* Updated headers and footers with the new LIT Lab logo.
+* Updated the Document Assembly Line overview.
 
 
 ### 1.2 - 2024-03-07
