@@ -52,6 +52,15 @@ p {
 
 ul {
   margin-top: 0;
+
+  &.no-bullets {
+    list-style: none;
+    padding-left: 0;
+
+    li {
+      margin-bottom: $spacing-sm;
+    }
+  }
 }
 
 li {
