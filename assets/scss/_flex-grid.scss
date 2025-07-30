@@ -109,6 +109,14 @@
   align-items: center;
 }
 
+.justify-left {
+  justify-content: start;
+}
+
+.justify-right {
+  justify-content: end;
+}
+
 .justify-space-between {
   justify-content: space-between;
 }
