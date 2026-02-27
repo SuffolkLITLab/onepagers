@@ -17,8 +17,6 @@ body {
 }
 
 #document-header {
-  break-after: avoid-page;
-
   .litlab-logo {
     height: 68px;
   }
@@ -36,7 +34,6 @@ body {
   break-before: page;
   break-inside: avoid-page;
   break-after: page;
-  max-height: 1vh;
   overflow: hidden;
 
   &:after {
@@ -44,10 +41,11 @@ body {
   }
 
   &:first-child {
-    break-before: avoid-page;
+    break-before: unset;
   }
 
-  * {
+  > *,
+  .page-content > * {
     break-before: avoid-page;
     break-inside: avoid-page;
     break-after: avoid-page;
