@@ -31,11 +31,24 @@ body {
 }
 
 .page {
-  max-height: 1vh;
+  break-before: page;
+  break-inside: avoid-page;
+  break-after: page;
   overflow: hidden;
 
   &:after {
     display: none !important;
+  }
+
+  &:first-child {
+    break-before: unset;
+  }
+
+  > *,
+  .page-content > * {
+    break-before: avoid-page;
+    break-inside: avoid-page;
+    break-after: avoid-page;
   }
 }
 

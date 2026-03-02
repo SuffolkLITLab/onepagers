@@ -9,11 +9,15 @@ $suffolk-gold-half: rgba(253, 185, 36, .5);
 $suffolk-gold-light: rgba(253, 185, 36, .2);
 $suffolk-purple: #6d2077;
 
-$border: 1px solid rgba(0, 0, 0, .2);
+$border-color: rgba(0, 0, 0, .2);
+$border-width: 1px;
+$border: $border-width solid $border-color;
 $border-radius: 1.25rem;
 $button-border: 2px solid currentColor;
 $button-border-radius: 9999px;
+
 $box-shadow: 5px 5px 0 rgba(0, 0, 0, .1);
+$text-shadow: 2.5px 2.5px 0 rgba(0, 0, 0, .1);
 
 $font-system-sans-serif: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
 $font-system-serif: Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
@@ -33,9 +37,11 @@ $font-size-huge: clamp(3.052rem, 3.052rem + ((1vw - 0.2rem) * 3.415), 4.768rem);
 $spacing-normal: 1rem;
 $spacing-sm: calc(.75 * $spacing-normal);
 $spacing-xs: calc(.75 * $spacing-sm);
+$spacing-xxs: calc(.75 * $spacing-xs);
 $spacing-md: calc(1.5 * $spacing-normal);
 $spacing-lg: calc(1.5 * $spacing-md);
 $spacing-xl: calc(1.5 * $spacing-lg);
+$spacing-xxl: calc(1.5 * $spacing-xl);
 
 // Breakpoints
 $breakpoint-sm: 576px;

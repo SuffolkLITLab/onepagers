@@ -18,6 +18,19 @@
   display: block;
 }
 
+.border-none {
+  border: none;
+}
+
+.text-shadow {
+  text-shadow: $text-shadow;
+}
+
+.shadow-none {
+  box-shadow: none;
+  text-shadow: none;
+}
+
 .text-center {
   text-align: center;
 }
@@ -30,38 +43,6 @@
 
 .print-only {
   display: none !important;
-}
-
-.add-top-margin {
-  margin-top: $spacing-normal;
-}
-
-.add-top-margin-md {
-  margin-top: $spacing-md;
-}
-
-.add-top-margin-lg {
-  margin-top: $spacing-lg;
-}
-
-.add-bottom-margin {
-  margin-bottom: $spacing-normal;
-}
-
-.add-bottom-margin-md {
-  margin-bottom: $spacing-md;
-}
-
-.add-bottom-margin-lg {
-  margin-bottom: $spacing-lg;
-}
-
-.remove-top-margin {
-  margin-top: 0 !important;
-}
-
-.remove-bottom-margin {
-  margin-bottom: 0 !important;
 }
 
 .screen-reader-text {
@@ -87,4 +68,8 @@ ul {
       }
     }
   }
+}
+
+.unbold {
+  font-weight: normal;
 }

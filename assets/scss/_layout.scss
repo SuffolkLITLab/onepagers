@@ -23,7 +23,6 @@ body {
 
 #document-header {
   align-items: center;
-  break-after: avoid-page;
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -37,9 +36,6 @@ body {
 
 .page {
   box-sizing: border-box;
-  break-before: page;
-  break-inside: avoid-page;
-  break-after: page;
   display: flex;
   flex-direction: column;
   min-height: 100svh;
@@ -51,16 +47,6 @@ body {
   @media (max-width: $breakpoint-sm) {
     padding-top: $spacing-normal;
     padding-bottom: $spacing-normal;
-  }
-
-  &:first-child {
-    break-before: avoid-page;
-  }
-
-  * {
-    break-before: avoid-page;
-    break-inside: avoid-page;
-    break-after: avoid-page;
   }
 
   &:not(:last-child):after {
