@@ -50,8 +50,10 @@ p {
   margin-top: 0;
 }
 
+ol,
 ul {
   margin-top: 0;
+  padding-left: 1em;
 
   &.no-bullets {
     list-style: none;

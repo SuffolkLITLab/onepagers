@@ -33,4 +33,16 @@
   > :last-child :last-child {
     margin-bottom: 0;
   }
+
+  &.background-gold {
+    background-color: $suffolk-gold-light;
+  }
+
+  &.background-blue {
+    background-color: $suffolk-blue-light;
+  }
+
+  &.background-blue-wash {
+    background-color: $suffolk-blue-wash;
+  }
 }

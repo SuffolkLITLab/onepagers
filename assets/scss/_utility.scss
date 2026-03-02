@@ -18,6 +18,19 @@
   display: block;
 }
 
+.border-none {
+  border: none;
+}
+
+.text-shadow {
+  text-shadow: $text-shadow;
+}
+
+.shadow-none {
+  box-shadow: none;
+  text-shadow: none;
+}
+
 .text-center {
   text-align: center;
 }
@@ -55,4 +68,8 @@ ul {
       }
     }
   }
+}
+
+.unbold {
+  font-weight: normal;
 }

@@ -56,11 +56,11 @@
   }
   
   @media (max-width: $breakpoint-sm) {
+    &.cols-2,
     &.cols-2-1,
     &.cols-1-2,
     &.cols-3,
     &.cols-4 {
-      gap: 0;
       grid-template-columns: none;
     } 
   }
