@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" type="image/png" href="/assets/img/lit-favicon.svg">
+  <link rel="stylesheet" href="/assets/css/normalize.css">
+  <link rel="stylesheet" href="/assets/vendor/bootstrap/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" media="print" href="/assets/css/print.css">
+  <title>Document Assembly Line: Accessibility</title>
+</head>
+<body class="one-pager">
+  <div id="document-container">
+    <main class="pages">
+      <section class="page">
+        <header 
+          id="document-header" 
+          data-subtitle="Document Assembly Line"
+          data-title="Accessibility for court forms" 
+          data-pdf="dal-accessibility.pdf"
+        ></header>
+        <div class="page-content">
+          <section id="accessibility-introduction" class="card font-md margin-bottom-md background-blue-wash">
+            <p><strong>docassemble</strong> and the <strong>AssemblyLine tools</strong> help turn court forms into WCAG 2.1 AA–compliant guided interviews.</p>
+          </section>
+          <section id="built-in-accessibility" class="margin-top-md margin-bottom-md card">
+            <h2>
+              Accessible out of the box
+            </h2>
+            <p>WCAG 2.1 AA compliance is built into docassemble and the AssemblyLine tools, including the essentials:</p>
+            <div class="grid cols-3 margin-top-md margin-bottom-md">
+              <div class="col">
+                <h3 class="row center-items gap-xs">
+                  <i class="bi bi-mic-fill"></i>
+                  Screen reader support
+                </h3>
+                <p>Optional built-in screen reader, plus ARIA attributes for assistive technologies.</p>
+              </div>
+              <div class="col">
+                <h3 class="row center-items gap-xs">
+                  <i class="bi bi-keyboard-fill"></i>
+                  Keyboard navigation
+                </h3>
+                <p>Supports navigation without a mouse throughout the interview.</p>
+              </div>
+              <div class="col">
+                <h3 class="row center-items gap-xs">
+                  <i class="bi bi-code-slash"></i>
+                  Structured HTML
+                </h3>
+                <p>Semantic headings, labels, and other landmarks for assistive technology.</p>
+              </div>
+            </div>
+          </section>
+          <section id="dal-tooling" class="margin-top-md margin-bottom-md card">
+            <h2>
+              Helps catch accessibility problems
+            </h2>
+            <p>The AssemblyLine adds tools for checking interviews against WCAG guidelines and documented best practices.</p>
+            <div class="grid cols-2 margin-top-md margin-bottom-md">
+              <div class="col">
+                <h3 class="row center-items gap-xs">
+                  <i class="bi bi-search"></i>
+                  Interview style checker
+                </h3>
+                <p>AssemblyLine flags clear WCAG failures and other issues.</p>
+              </div>
+              <div class="col">
+                <h3 class="row center-items gap-xs">
+                  <i class="bi bi-robot"></i>
+                  Automated testing
+                </h3>
+                <p>AssemblyLine runs accessibility checks on every interview update.</p>
+              </div>
+            </div>
+          </section>
+          <section id="best-practices" class="margin-top-md margin-bottom-md card">
+            <h2 class="row center-items gap-xs">
+              <i class="bi bi-signpost-split-fill"></i>
+              Guidance for courts and interview authors
+            </h2>
+            <p>The <a href="https://assemblyline.suffolklitlab.org/">Document Assembly Line website</a> documents best practices so interview builders can create accessible interviews with confidence.</p>
+          </section>
+          <section id="accessibility-cta" class="grid cols-2-1 gap-lg">
+            <div class="col">
+              <h2 class="row center-items gap-xs margin-top-0">
+                <i class="bi bi-file-earmark-text-fill"></i>
+                Read more
+              </h2>
+              <p class="margin-bottom-0">
+                <span class="screen-only"><a href="https://assemblyline.suffolklitlab.org/docs/coding_style/accessibility" target="_blank">Making docassemble interviews accessible</a> (Document Assembly Line)</span>
+                <span class="print-only">assemblyline.suffolklitlab.org/docs/coding_style/accessibility</span>
+              </p>
+            </div>
+            <div class="flex-col gap-xs">
+              <h2 class="row center-items gap-xs margin-top-0">
+                <i class="bi bi-chat-fill flip-x"></i>
+                Ready to talk?
+              </h2>
+              <a class="litlab-email-button button block text-center" href="mailto:litlab@suffolk.edu" target="_blank">
+                <span class="screen-only">Email the LIT Lab</span>
+                <span class="print-only">litlab@suffolk.edu</span>
+              </a>
+            </div>
+          </section>
+        </div>
+        <footer class="page-footer"></footer>
+      </section>
+    </main>
+  </div>
+  <script type="text/javascript" src="/assets/vendor/jquery/jquery-3.7.1.min.js"></script>
+  <script type="text/javascript" src="/assets/js/load-template-parts.js"></script>
+</body>
+</html>
